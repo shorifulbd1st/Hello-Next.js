@@ -1,11 +1,13 @@
 import getAllPosts, { Post } from '@/lib/getAllPost'
+import { Roboto } from 'next/font/google';
 import React from 'react'
+const roboto = Roboto({subsets: ["latin"], weight: "400"});
 
 const page = async() => {
     const posts: Post[] = await getAllPosts();
     
   return (
-    <div className='w-11/12 mx-auto my-10'>
+    <div className={`${roboto.className} w-11/12 mx-auto `}>
       {
         posts.map(post =>(
             <div key={post.id}>
