@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Calculator = () => {
+const  Calculator = () => {
   return (
    <div className="w-72 h-64 rounded-xl relative border border-red-600">
   <Image

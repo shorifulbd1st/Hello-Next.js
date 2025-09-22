@@ -2,7 +2,10 @@ import getAllPosts, { Post } from '@/lib/getAllPost'
 import { Roboto } from 'next/font/google';
 import React from 'react'
 const roboto = Roboto({subsets: ["latin"], weight: "400"});
-
+export const metadata = {
+  title: "All posts ",
+  description: "Learn more about our company, our mission and vision",
+};
 const page = async() => {
     const posts: Post[] = await getAllPosts();
     
