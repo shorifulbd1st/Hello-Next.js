@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className='w-11/12 mx-auto'>
       <h1>This is profile page</h1>
     </div>
   )

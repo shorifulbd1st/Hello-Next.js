@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav className="relative bg-white shadow dark:bg-gray-800">
-      <div className="container px-6 py-3 mx-auto md:flex">
+      <div className="w-11/12  py-3 mx-auto md:flex justify-between items-center">
         <div className="container flex items-center justify-between">
       
             <Link href="/">
